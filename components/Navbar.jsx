@@ -1,4 +1,6 @@
-import React from 'react';
+import Image from 'next/image';
+import logo from '@/assets/images/logo-white.png';
+import profileDefault from '@/assets/images/profile.png';
 
 const Navbar = () => {
   return (
@@ -39,7 +41,7 @@ const Navbar = () => {
               <Image className="h-10 w-auto" src={logo} alt="PropertyPulse" />
 
               <span className="hidden md:block text-white text-2xl font-bold ml-2">
-                PropertyPulse
+                PropertyRental
               </span>
             </a>
             {/* <!-- Desktop Menu Hidden below md screens --> */}
