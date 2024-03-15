@@ -12,12 +12,25 @@ const PropertyCard = ({ property }) => {
   const getRateDisplay = () => {
     const { rates } = property;
 
+    let locale = 'en-NG'; // Default locale
+    let currency = 'NGN'; // Default currency
+
+    if (typeof window !== 'undefined') {
+      locale = window.navigator.language;
+      currency = window.navigator.language.split('-')[1];
+    }
+
+    const formatter = new Intl.NumberFormat(locale, {
+      style: 'currency',
+      currency: currency,
+    });
+
     if (rates.monthly) {
-      return `${rates.monthly.toLocaleString()}/mo`;
+      return `${formatter.format(rates.monthly)}/mo`;
     } else if (rates.yearly) {
-      return `${rates.yearly.toLocaleString()}/yr`;
+      return `${formatter.format(rates.yearly)}/yr`;
     } else if (rates.biennial) {
-      return `${rates.biennial.toLocaleString()}/biennial `;
+      return `${formatter.format(rates.biennial)}/biennial `;
     }
   };
 
@@ -37,7 +50,7 @@ const PropertyCard = ({ property }) => {
           <h3 className="text-xl font-bold">{property.name}</h3>
         </div>
         <h3 className="absolute top-[10px] right-[10px] bg-white px-4 py-2 rounded-lg text-blue-500 font-bold text-right md:text-center lg:text-right">
-          ${getRateDisplay()}
+          {getRateDisplay()}
         </h3>
 
         <div className="flex justify-center gap-4 text-gray-500 mb-4">
