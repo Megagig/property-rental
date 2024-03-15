@@ -31,7 +31,7 @@
       "Coffee Maker"
     ],
     "rates": {
-      "weekly": 1100,
+      "yearly": 1100,
       "monthly": 4200
     },
     "seller_info": {
@@ -120,9 +120,9 @@
       "Coffee Maker"
     ],
     "rates": {
-      "nightly": 200,
-      "weekly": 750,
-      "monthly": 3300
+      "biennial ": 200,
+      "monthly": 750,
+      "yearly": 3300
     },
     "seller_info": {
       "name": "David Johnson",
@@ -156,7 +156,7 @@
       "Coffee Maker"
     ],
     "rates": {
-      "weekly": 2000
+      "yearly": 2000
     },
     "seller_info": {
       "name": "Emily Davis",
@@ -191,7 +191,7 @@
       "Outdoor Grill/BBQ"
     ],
     "rates": {
-      "weekly": 1100,
+      "yearly": 1100,
       "monthly": 4200
     },
     "seller_info": {
@@ -227,8 +227,8 @@
       "Outdoor Grill/BBQ"
     ],
     "rates": {
-      "nightly": 500,
-      "weekly": 2500
+      "biennial ": 500,
+      "yearly": 2500
     },
     "seller_info": {
       "name": "Sarah Wilson",
@@ -262,8 +262,8 @@
       "Pet-Friendly"
     ],
     "rates": {
-      "nightly": 475,
-      "weekly": 2000
+      "biennial ": 475,
+      "yearly": 2000
     },
     "seller_info": {
       "name": "Robert Anderson",
@@ -297,8 +297,8 @@
       "Smart TV"
     ],
     "rates": {
-      "nightly": 300,
-      "weekly": 1100
+      "biennial ": 300,
+      "yearly": 1100
     },
     "seller_info": {
       "name": "Jennifer Martin",
@@ -333,7 +333,7 @@
       "Outdoor Grill/BBQ"
     ],
     "rates": {
-      "weekly": 1000,
+      "yearly": 1000,
       "monthly": 3800
     },
     "seller_info": {
@@ -368,7 +368,7 @@
       "Coffee Maker"
     ],
     "rates": {
-      "weekly": 550,
+      "yearly": 550,
       "monthly": 2100
     },
     "seller_info": {
